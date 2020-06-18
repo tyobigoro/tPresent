@@ -72,7 +72,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="startSystemSound" destination="Gne-Py-Fem" eventType="touchUpInside" id="54c-ad-mXm"/>
+                                    <action selector="startBtnDidTap" destination="Gne-Py-Fem" eventType="touchUpInside" id="Ks8-3B-viF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csf-aW-x1y">
@@ -85,7 +85,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="stopSystemSound" destination="Gne-Py-Fem" eventType="touchUpInside" id="TLn-ts-dXQ"/>
+                                    <action selector="stopBtnDidTap" destination="Gne-Py-Fem" eventType="touchUpInside" id="IN9-pq-BSA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -100,6 +100,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DSj-d2-i79"/>
                     </view>
+                    <connections>
+                        <outlet property="startBtn" destination="6R9-vU-kTc" id="hFj-ab-OK4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1IR-fb-Q3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
