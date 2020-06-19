@@ -11,28 +11,13 @@ import UIKit
 
 class SViewContoroller: UIViewController {
     
-    @IBOutlet weak var startBtn: UIButton!
-    
     var soundID: Int = 1000
-    
-    @IBAction func startBtnDidTap() {
-        let systemSoundID = SystemSoundID(soundID)
-        AudioServicesAddSystemSoundCompletion(systemSoundID, nil, nil, { (systemSoundID, nil) -> Void in
-            AudioServicesPlaySystemSound(systemSoundID)
-        }, nil)
-        AudioServicesPlaySystemSound(systemSoundID)
-        startBtn.isEnabled = false
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.startSystemSound()
     }
     
-    @IBAction func stopBtnDidTap() {
-        stopSystemSound()
-    }
-    
-    func stopSystemSound() {
-        AudioServicesRemoveSystemSoundCompletion(SystemSoundID(soundID))
-        AudioServicesDisposeSystemSoundID(SystemSoundID(soundID))
-        startBtn.isEnabled = true
-    }
     
     @IBAction func transition() {
         self.stopSystemSound()
@@ -41,4 +26,16 @@ class SViewContoroller: UIViewController {
         
     }
     
+    func startSystemSound() {
+          let systemSoundID = SystemSoundID(soundID)
+          AudioServicesAddSystemSoundCompletion(systemSoundID, nil, nil, { (systemSoundID, nil) -> Void in
+              AudioServicesPlaySystemSound(systemSoundID)
+          }, nil)
+          AudioServicesPlaySystemSound(systemSoundID)
+      }
+    
+    func stopSystemSound() {
+        AudioServicesRemoveSystemSoundCompletion(SystemSoundID(soundID))
+        //AudioServicesDisposeSystemSoundID(SystemSoundID(soundID))
+    }
 }

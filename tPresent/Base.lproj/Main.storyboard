@@ -62,47 +62,14 @@
                                     <action selector="transition" destination="Gne-Py-Fem" eventType="touchUpInside" id="SWR-nV-itp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R9-vU-kTc">
-                                <rect key="frame" x="115" y="597" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="AV7-wN-S6K"/>
-                                    <constraint firstAttribute="height" constant="60" id="qjP-3N-TWA"/>
-                                </constraints>
-                                <state key="normal" title="play">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="startBtnDidTap" destination="Gne-Py-Fem" eventType="touchUpInside" id="Ks8-3B-viF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csf-aW-x1y">
-                                <rect key="frame" x="239" y="597" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="U3g-pP-pzx"/>
-                                    <constraint firstAttribute="height" constant="60" id="ccq-zJ-L2k"/>
-                                </constraints>
-                                <state key="normal" title="stop">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="stopBtnDidTap" destination="Gne-Py-Fem" eventType="touchUpInside" id="IN9-pq-BSA"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dQo-C4-ccE" firstAttribute="centerY" secondItem="IdP-s9-eCD" secondAttribute="centerY" id="15E-kA-54F"/>
-                            <constraint firstItem="Csf-aW-x1y" firstAttribute="centerX" secondItem="IdP-s9-eCD" secondAttribute="centerX" multiplier="1.3" id="9x9-rF-LbG"/>
-                            <constraint firstItem="Csf-aW-x1y" firstAttribute="centerY" secondItem="IdP-s9-eCD" secondAttribute="centerY" multiplier="1.4" id="GXI-Gt-jjb"/>
-                            <constraint firstItem="6R9-vU-kTc" firstAttribute="centerX" secondItem="IdP-s9-eCD" secondAttribute="centerX" multiplier="0.7" id="PXJ-gA-ErP"/>
-                            <constraint firstItem="6R9-vU-kTc" firstAttribute="centerY" secondItem="IdP-s9-eCD" secondAttribute="centerY" multiplier="1.4" id="dJJ-Fq-5Tu"/>
                             <constraint firstItem="dQo-C4-ccE" firstAttribute="centerX" secondItem="IdP-s9-eCD" secondAttribute="centerX" id="peK-Rl-Aus"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DSj-d2-i79"/>
                     </view>
-                    <connections>
-                        <outlet property="startBtn" destination="6R9-vU-kTc" id="hFj-ab-OK4"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1IR-fb-Q3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
